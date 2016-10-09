@@ -1,0 +1,13 @@
+{
+  "name": "xirr-app",
+  "version": "1.0.0",
+  "description": "Cordova style app for xirr library",
+  "author": {
+    "name": "Ray DeCampo",
+    "email": "ray@decampo.org"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "xirr": "^1.0.1"
+  }
+}

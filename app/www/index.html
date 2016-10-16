@@ -21,12 +21,38 @@
     </head>
     <body>
         <h1>xirr</h1>
-        <div id="result"></div>
+        <p id="result">&nbsp;</p>
         <form id="xirr-form">
-            <div><input type="text" name="amount" value="-1000"> <input type="date" name="when" value="2010-01-01"></div>
-            <div><input type="text" name="amount" value="-1000"> <input type="date" name="when" value="2010-07-01"></div>
-            <div><input type="text" name="amount" value="2200"> <input type="date" name="when" value="2011-01-01"></div>
-            <div><button id="calculate">Calculate</button></div>
+            <div id="inputs">
+                <div><input type="number" name="amount" value="-1000"><input type="date" name="when" value="2016-01-01"></div>
+                <div><input type="number" name="amount" value="-1000"><input type="date" name="when" value="2016-07-01"></div>
+                <div><input type="number" name="amount" value="2200"><input type="date" name="when" value="2017-01-01"></div>
+            </div>
+            <p><button id="add-rows">Add Rows</button></p>
+            <p><button id="calculate">Calculate xirr</button></p>
         </form>
+        <h2>Instructions</h2>
+        <p>
+            To calculate the annualized internal rate of return, enter the
+            amounts and dates of the transactions.  The amounts are relative
+            to your account, so purchases are negative and sales or
+            disbursements are positive.  If the investment is ongoing, enter
+            a transaction with the present value and today's date.
+        </p>
+        <p>
+            Use the add rows button if you need more transactions.  Leave rows
+            blank if you have too many rows.
+        </p>
+        <p>
+            Use the "Calculate xirr" button to calculate the annualized
+            internal rate of return.  The result appears above the transactions.
+        </p>
+        <p>
+            The internal rate of return of an investment is the interest rate
+            required on a simple investment (like a savings account) to
+            generate the equivalent results.  It can be used to compare
+            disparate investment performances, e.g. owning stock vs bonds or
+            CDs.
+        </p>
     </body>
 </html>

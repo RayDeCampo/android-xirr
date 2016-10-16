@@ -8,6 +8,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "xirr": "^1.0.1"
+    "xirr": "^1.0.2"
   }
 }

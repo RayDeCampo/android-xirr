@@ -40,9 +40,13 @@ module.exports = function (grunt) {
 
 
     grunt.config('watch', {
-        all: {
+        js: {
             files: ['src/**/*.js'],
             tasks: ['jshint', 'browserify', 'exec:cordova-prepare']
+        },
+        www: {
+            files: ['app/www/**'],
+            tasks: ['exec:cordova-prepare']
         }
     });
 

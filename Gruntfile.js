@@ -30,11 +30,15 @@ module.exports = function (grunt) {
         },
     });
 
-    /////////////////////////// BROSWERIFY ///////////////////////////////////
+    /////////////////////////// EXEC ////////////////////////////////////////
     grunt.config('exec', {
         'cordova-prepare': {
             cwd: 'app',
             command: 'cordova prepare'
+        },
+        'cordova-release': {
+            cwd: 'app',
+            command: 'cordova run android --release'
         }
     });
 

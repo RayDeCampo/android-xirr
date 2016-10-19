@@ -38,7 +38,7 @@ module.exports = function (grunt) {
         },
         'cordova-release': {
             cwd: 'app',
-            command: 'cordova run android --release'
+            command: 'cordova build android --release'
         }
     });
 

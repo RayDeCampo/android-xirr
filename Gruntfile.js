@@ -55,4 +55,5 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('default', ['jshint', 'browserify', 'exec:cordova-prepare', 'watch']);
+    grunt.registerTask('release', ['jshint', 'browserify', 'exec:cordova-release']);
 };

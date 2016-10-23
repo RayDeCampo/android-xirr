@@ -20,39 +20,80 @@
         <script type="text/javascript" src="js/index.js"></script>
     </head>
     <body>
-        <h1>xirr</h1>
-        <p id="result">&nbsp;</p>
-        <form id="xirr-form">
-            <div id="inputs">
-                <div><input type="number" name="amount" value="-1000"><input type="date" name="when" value="2016-01-01"></div>
-                <div><input type="number" name="amount" value="-1000"><input type="date" name="when" value="2016-07-01"></div>
-                <div><input type="number" name="amount" value="2200"><input type="date" name="when" value="2017-01-01"></div>
+        <div id="banner"><img src="img/banner.png"></div>
+        <div id="content">
+            <div id="output">
+                <div id="result">? %</div>
+                <div id="message"></div>
             </div>
-            <p><button id="add-rows">Add Rows</button></p>
-            <p><button id="calculate">Calculate xirr</button></p>
-        </form>
-        <h2>Instructions</h2>
-        <p>
-            To calculate the annualized internal rate of return, enter the
-            amounts and dates of the transactions.  The amounts are relative
-            to your account, so purchases are negative and sales or
-            disbursements are positive.  If the investment is ongoing, enter
-            a transaction with the present value and today's date.
-        </p>
-        <p>
-            Use the add rows button if you need more transactions.  Leave rows
-            blank if you have too many rows.
-        </p>
-        <p>
-            Use the "Calculate xirr" button to calculate the annualized
-            internal rate of return.  The result appears above the transactions.
-        </p>
-        <p>
-            The internal rate of return of an investment is the interest rate
-            required on a simple investment (like a savings account) to
-            generate the equivalent results.  It can be used to compare
-            disparate investment performances, e.g. owning stock vs bonds or
-            CDs.
-        </p>
+            <form id="xirr-form">
+                <div id="inputs">
+                    <div><input type="number" name="amount" value="-1000"><input type="date" name="when" value="2016-01-01"></div>
+                    <div><input type="number" name="amount" value="-1000"><input type="date" name="when" value="2016-07-01"></div>
+                    <div><input type="number" name="amount" value="2200"><input type="date" name="when" value="2017-01-01"></div>
+                </div>
+                <p><button id="add-rows">Add Rows</button></p>
+                <p><button id="calculate">Calculate xirr</button></p>
+            </form>
+            <h2>Instructions</h2>
+            <p>
+                To calculate the annualized internal rate of return, enter the
+                amounts and dates of the transactions.  The amounts are relative
+                to your account, so purchases are negative and sales or
+                disbursements are positive.  If the investment is ongoing, enter
+                a transaction with the present value and today's date.
+            </p>
+            <p>
+                Use the add rows button if you need more transactions.  Leave rows
+                blank if you have too many rows.
+            </p>
+            <p>
+                Use the "Calculate xirr" button to calculate the annualized
+                internal rate of return.  The result appears above the transactions.
+            </p>
+            <p>
+                The internal rate of return of an investment is the interest rate
+                required on a simple investment (like a savings account) to
+                generate the equivalent results.  It can be used to compare
+                disparate investment performances, e.g. owning stock vs bonds or
+                CDs.
+            </p>
+            <h2>Acknowledgements</h2>
+            <p>
+                The xirr app would not be possible without the open source
+                community and the following open source projects:
+            </p>
+            <ul>
+                <li>
+                    <a href="http://cordova.apache.org">Apache Cordova</a>,
+                    licensed under the
+                    <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>.
+                    Apache Cordova transforms HTML 5 into native phone apps.
+                </li>
+                <li>
+                    <a href="http://browserify.org/">Browserify</a>, a build tool
+                    for converting Node.js modules into JavaScript which can run
+                    in a browser.
+                </li>
+                <li>
+                    The <a href="https://github.com/scijs/newton-raphson-method">
+                    newton-raphson-method</a> Node.js module from
+                    <a href="http://scijs.net/">scijs</a>, licensed under the
+                    <a href="https://opensource.org/licenses/MIT">MIT license</a>.
+                </li>
+            </ul>
+            <p>
+                The xirr app was conceived as an example of using Browserify and
+                Cordova to transform a Node.js module into an Android app.
+            </p>
+            <p>
+                If you are still reading and are concerned that none of the stuff
+                in this section made any sense whatsoever, do not worry, you can
+                still use the app to calculate the rate of return on your investment
+                in Uncle Fred's user car shop, assuming he ever actually disburses
+                you any money.  (Should you really have taken out a student loan to
+                finance that?  You know that those can't be discharged in bankrupty.)
+            </p>
+        </div>
     </body>
 </html>

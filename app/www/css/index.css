@@ -21,28 +21,44 @@ body {
 
 #output {
     display: table;
-    min-height: 10vw;
+    min-height: 32px;
     width: 100%;
     margin-bottom: .5em;
 }
 
+#output>div {
+    min-width: 90px;
+}
+
 #result {
     display: table-cell;
-    height: 10vw;
-    line-height: 10vw;
-    font-size: 9vw;
     vertical-align: bottom;
-    min-width: 30vw;
+    height: 32px;
+    line-height: 32px;
+    font-size: 30px;
 }
 
 #message {
     display: table-cell;
-    min-width: 30vw;
+    font-style: italic;
+    vertical-align: bottom;
     padding-left: 2em;
     padding-right: .5em;
     padding-bottom: .4em;
-    font-style: italic;
-    vertical-align: bottom;
+}
+
+@media (min-width: 400px) {
+    #output {
+        min-height: 45px;
+    }
+    #output>div {
+        min-width: 120px;
+    }
+    #result {
+        height: 45px;
+        line-height: 45px;
+        font-size: 40px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -51,16 +67,37 @@ body {
     }
 }
 
+@media (min-width: 700px) {
+    #output {
+        min-height: 70px;
+    }
+    #output>div {
+        min-width: 210px;
+    }
+    #result {
+        height: 70px;
+        line-height: 70px;
+        font-size: 63px;
+    }
+}
+
 #xirr-form {
     margin: .3em auto 3em auto;
     clear: both;
 }
 
-#xirr-form input {
-    width: 48%;
-    max-width: 40vw;
+#inputs {
+    display: table;
+    width: 100%;
+}
+#inputs>div {
+    display: table-row;
+}
+#inputs>div>input {
+    display: table-cell;
     margin-right: .2em;
     font-family: serif;
+    width: 47%;
 }
 
 input[type="number"] {

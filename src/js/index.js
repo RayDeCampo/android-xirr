@@ -45,9 +45,11 @@ var addRows = function(event) {
     event.preventDefault();
 
     var inputs = document.getElementById('inputs');
+    var firstNewRow = makeRow();
+    inputs.appendChild(firstNewRow);
     inputs.appendChild(makeRow());
     inputs.appendChild(makeRow());
-    inputs.appendChild(makeRow());
+    firstNewRow.firstChild.focus();
 };
 
 var makeRow = function() {

@@ -1,0 +1,19 @@
+{
+    "name": "org.decampo.xirr",
+    "version": "1.0.0",
+    "displayName": "xirr",
+    "cordova": {
+        "platforms": [
+            "android",
+            "browser"
+        ],
+        "plugins": {
+            "cordova-plugin-whitelist": {}
+        }
+    },
+    "dependencies": {
+        "cordova-browser": "~4.1.0",
+        "cordova-android": "~5.2.2",
+        "cordova-plugin-whitelist": "1"
+    }
+}

@@ -109,10 +109,11 @@ input:invalid {
 }
 
 #buttons {
-    margin: 2em 0;
+    margin: 1em 0;
     text-align: center;
 }
 #buttons>button {
-    margin: 0 2.5em;
-    font-size: 150%;
+    margin: 1em 2.5em;
+    font-size: 120%;
+    border-radius: .5em;
 }

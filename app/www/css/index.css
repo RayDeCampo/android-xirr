@@ -107,3 +107,12 @@ input[type="number"] {
 input:invalid {
     background-color: red;
 }
+
+#buttons {
+    margin: 2em 0;
+    text-align: center;
+}
+#buttons>button {
+    margin: 0 2.5em;
+    font-size: 150%;
+}
